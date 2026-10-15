@@ -1,4 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>README</title>
 <style type="text/css">
+:root{color-scheme:light;}
+body{font-family:"Arial",sans-serif;font-size:12pt;color:#000000;background-color:#FFFFFF;}
+a{color:#0000FF;}
+.markdown-alert>:last-child{margin-bottom:0;}
+.markdown-alert-title{margin-top:0;}
+@media print{body{color:#000;background-color:#fff;}}
+</style>
+<script>
+document.addEventListener("click",function(e){var a=e.target.closest("a");if(a){var h=a.getAttribute("href");if(h&&h.charAt(0)==="#"){e.preventDefault();var t=document.getElementById(decodeURIComponent(h.substring(1)));if(t)t.scrollIntoView();}}});
+window.addEventListener("scroll",function(){if(window.chrome&&chrome.webview)chrome.webview.postMessage("scrollY:"+Math.round(window.scrollY)+":"+Math.max(0,Math.round(document.documentElement.scrollHeight-window.innerHeight)));});
+</script>
+</head>
+<body>
+<style type="text/css">
+img{
+  max-width: 100%;
+  height: auto;
+}
+video{
+  max-width: 100%;
+  height: auto;
+}
 code{
   font-family: "Consolas", monospace;
 }
@@ -21,63 +48,131 @@ table{
   border:1px solid;
   border-collapse:collapse;
 }
-th{  padding:5px;
+th{
+  padding:5px;
   border:1px solid;
 }
 td{
   padding:5px;
   border:1px solid;
 }
+mark{
+  background-color: #fff3a0;
+  color: #000;
+}
+kbd{
+  font-family: "Consolas", monospace;
+  border: 1px solid #bbb;
+  padding: 0 4px;
+}
+div.math{
+  text-align: center;
+}
+pre.mermaid{
+  border: none;
+  padding: 0;
+}
+.markdown-alert{
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  border-left: 4px solid #d0d7de;
+}
+.markdown-alert-title{
+  font-weight: bold;
+}
+.markdown-alert-note{
+  border-left: 4px solid #0969da;
+}
+.markdown-alert-note .markdown-alert-title{
+  color: #0969da;
+}
+.markdown-alert-tip{
+  border-left: 4px solid #1a7f37;
+}
+.markdown-alert-tip .markdown-alert-title{
+  color: #1a7f37;
+}
+.markdown-alert-important{
+  border-left: 4px solid #8250df;
+}
+.markdown-alert-important .markdown-alert-title{
+  color: #8250df;
+}
+.markdown-alert-warning{
+  border-left: 4px solid #9a6700;
+}
+.markdown-alert-warning .markdown-alert-title{
+  color: #9a6700;
+}
+.markdown-alert-caution{
+  border-left: 4px solid #cf222e;
+}
+.markdown-alert-caution .markdown-alert-title{
+  color: #cf222e;
+}
 </style>
-<h2>IconFontsImageList <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg" alt="License"/></a></h2>
-<h2>Four advanced components to simplify use of Icon Fonts as images and ImageList (for VCL and FMX). Full support for High-DPI apps. Rendering optimized with GDI+</h2>
-<h3>Actual official version 3.4.2 (VCL+FMX)</h3>
+<h2 id="iconfontsimagelist">IconFontsImageList</h2>
+<!-- badges -->
+<p><a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License: Apache" /></a>
+<a href="https://github.com/EtheaDev/IconFontsImageList/releases"><img src="https://img.shields.io/github/v/release/EtheaDev/IconFontsImageList?label=release&amp;color=blue" alt="Latest release" /></a>
+<a href="https://www.embarcadero.com/products/delphi"><img src="https://img.shields.io/badge/Delphi-7%2B-e62329.svg" alt="Delphi 7+" /></a>
+<a href="https://docwiki.embarcadero.com/RADStudio/en/Main_Page"><img src="https://img.shields.io/badge/Platform-VCL%20%7C%20FMX-8a2be2.svg" alt="Platform: VCL and FMX" /></a></p>
+<h2 id="four-advanced-components-to-simplify-use-of-icon-fonts-as-images-and-imagelist-for-vcl-and-fmx-full-support-for-high-dpi-apps-rendering-optimized-with-gdi">Four advanced components to simplify use of Icon Fonts as images and ImageList (for VCL and FMX). Full support for High-DPI apps. Rendering optimized with GDI+</h2>
 <table>
-  <tr>
-    <th>Component</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><img src="./Packages/IconFontsImageCollectionComponentIcon.png" alt="IconFontsImageCollectionComponentIcon.png"/></td>
-    <td><strong>TIconFontsImageCollection</strong> is collection of &ldquo;Icon Fonts&rdquo; for Delphi to provide a centralized list of images for IconFontsVirtualImageList (only for VCL)</td>
-  </tr>
-  <tr>
-    <td><img src="./Packages/IconFontsVirtualImageListComponentIcon.png" alt="IconFontsVirtualImageListComponentIcon.png"/></td>
-    <td><strong>TIconFontsVirtualImageList</strong> is a special &ldquo;virtual&rdquo; ImageList for Delphi linked to an IconFontsImageCollection (only for VCL) to simplify use of &ldquo;Font Icons&rdquo; (resize, color and more&hellip;)</td>
-  </tr>
-  <tr>
-    <td><img src="./Packages/IconFontsImageComponentIcon.png" alt="IconFontsImageComponentIcon.png"/></td>
-    <td><strong>TIconFontImage</strong> is an extended Image component for Delphi (VCL+FMX) to show any Icon Font directly or included into a an IconFontsImageList with all functionality (stretch, color, opacity and more&hellip;)</td>
-  </tr>
-  <tr>
-    <td><img src="./Packages/IconFontsImageListComponentIcon.png" alt="IconFontsImageListComponentIcon.png"/></td>
-    <td><strong>TIconFontsImageList</strong> is an extended ImageList for Delphi (VCL+FMX) to simplify use of Icon Fonts (resize, color and more&hellip;). Use only for simple application with one form.</td>
-  </tr>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./Packages/IconFontsImageCollectionComponentIcon.png" alt="IconFontsImageCollectionComponentIcon.png" /></td>
+<td><strong>TIconFontsImageCollection</strong> is collection of “Icon Fonts” for Delphi to provide a centralized list of images for IconFontsVirtualImageList (only for VCL)</td>
+</tr>
+<tr>
+<td><img src="./Packages/IconFontsVirtualImageListComponentIcon.png" alt="IconFontsVirtualImageListComponentIcon.png" /></td>
+<td><strong>TIconFontsVirtualImageList</strong> is a special “virtual” ImageList for Delphi linked to an IconFontsImageCollection (only for VCL) to simplify use of “Font Icons” (resize, color and more…)</td>
+</tr>
+<tr>
+<td><img src="./Packages/IconFontsImageComponentIcon.png" alt="IconFontsImageComponentIcon.png" /></td>
+<td><strong>TIconFontImage</strong> is an extended Image component for Delphi (VCL+FMX) to show any Icon Font directly or included into a an IconFontsImageList with all functionality (stretch, color, opacity and more…)</td>
+</tr>
+<tr>
+<td><img src="./Packages/IconFontsImageListComponentIcon.png" alt="IconFontsImageListComponentIcon.png" /></td>
+<td><strong>TIconFontsImageList</strong> is an extended ImageList for Delphi (VCL+FMX) to simplify use of Icon Fonts (resize, color and more…). Use only for simple application with one form.</td>
+</tr>
+</tbody>
 </table>
-<h2>New Setup for automatic installation of components</h2>
-<p>From 3.4.0 version a new &ldquo;Installer&rdquo; read-to-use is located in the Release area: <a href="https://github.com/EtheaDev/IconFontsImageList/releases/latest/download/IconFontsImageList_Setup.exe">Download the Installer</a>.</p>
+<h2 id="new-setup-for-automatic-installation-of-components">New Setup for automatic installation of components</h2>
+<p>An “Installer” read-to-use is located in the Release area: <a href="https://github.com/EtheaDev/IconFontsImageList/releases/latest/download/IconFontsImageList_Setup.exe">Download the Installer</a>.</p>
 <p>The Installer automatically detect your Delphi versions, install sources, build and install packages and add source paths.</p>
-<p><img src="./Demo/Images/Setup.png" alt="Setup"/></p>
-<h2>Documentation</h2>
+<p><img src="./Demo/Images/Setup.png" alt="Setup" /></p>
+<h2 id="documentation">Documentation</h2>
 <p>Follow the <a href="https://ethea.it/docs/iconfontsimagelist/">Project Site</a> to known how to use those components to modernize your Delphi VCL or FMX applications with scalable, colored and beautiful icons.</p>
-<h3>Available from Delphi 7 to Delphi 13 (32bit and 64bit platforms)</h3>
+<h3 id="available-from-delphi-7-to-delphi-13-32bit-and-64bit-platforms">Available from Delphi 7 to Delphi 13 (32bit and 64bit platforms)</h3>
 <p>Notice: the Installer is not able to automatic compile and install for Delphi 7: you must install it manually as explained <a href="https://github.com/EtheaDev/IconFontsImageList/wiki#installation">here</a></p>
-<p><img src="./Demo/Images/SupportingDelphi.jpg" alt="Delphi Support"/></p>
-<p>Related links: https://www.embarcadero.com/ - https://learndelphi.org/</p>
-<p>Sample image of VCL version
-<img src="./Demo/Images/Sample.jpg" alt="Sample.jpg"/></p>
-<p>Sample image of FMX version
-<img src="./Demo/Images/SampleFMX.jpg" alt="SampleFMX.jpg"/></p>
-<p>Follow the <a href="https://github.com/EtheaDev/IconFontsImageList/wiki">guide in Wiki section</a> to known how to use those components to modernize your Delphi VCL or FMX applications scalable, colored and beautiful with few lines of code.</p>
-<h2>Very important notice:</h2>
+<p><img src="./Demo/Images/SupportingDelphi.jpg" alt="Delphi Support" /></p>
+<p>Related links: <a href="https://www.embarcadero.com/">https://www.embarcadero.com/</a> - <a href="https://learndelphi.org/">https://learndelphi.org/</a></p>
+<p><strong>Sample image of VCL version</strong>
+<img src="./Demo/Images/Sample.jpg" alt="Sample.jpg" /></p>
+<p><strong>Sample image of FMX version</strong>
+<img src="./Demo/Images/SampleFMX.jpg" alt="SampleFMX.jpg" /></p>
+<h2 id="very-important-notice">Very important notice:</h2>
 <p><strong>TVirtualImageList</strong> (available from D10.3) and <strong>TIconFontsVirtualImageList</strong> both use images from <strong>TIconFontsImageCollection</strong>. An important difference is that TVirtualImageList may use and create only a subset of the images in the collection, whereas TIconFontsVirtualImageList creates all images of the collection everytime it is needed (e,g. DPI change), which is slower and consumes more memory.</p>
-<p>We advise that TIconFontsVirtualImageList should be used only for versions of Delphi before 10.3. For recent versions of Delphi the recommended combination should be <strong>TIconFontsImageCollection + TVirtualImageList</strong>. Don't forget also the importance of TVirtualImageList.PreserveItems when you have a large ImageCollection with many linked Actions. Without setting this property to &ldquo;True&rdquo;, everytime you add or remove an icon in the collection, you have to check and change the ImageIndex of all the Actions.</p>
-<h2>Demos uses Material Design Icon Fonts</h2>
-<p>All demos included in this repo uses the Material Design Font available <a href="https://github.com/Templarian/MaterialDesign-Webfont">here.</a> (the file &ldquo;materialdesignicons-webfont.ttf&rdquo; is renamed to &ldquo;Material Design Icons.ttf&rdquo; and included into <strong>Demo\Fonts</strong> folder)</p>
-<p><strong>Warning: &ldquo;Material Font&rdquo; has changed again</strong></p>
-<p>Take care of changed Font file used in the Demos starting from v3.3.2 release, as explained <a href="https://github.com/EtheaDev/IconFontsImageList/wiki/Deploy-Applications">here</a>.</p>
-<p><strong>RELEASE NOTES:</strong>
-19 Aug 2025: version 3.4.2 (VCL+FMX)</p>
+<p>We advise that TIconFontsVirtualImageList should be used only for versions of Delphi before 10.3. For recent versions of Delphi the recommended combination should be <strong>TIconFontsImageCollection + TVirtualImageList</strong>. Don't forget also the importance of TVirtualImageList.PreserveItems when you have a large ImageCollection with many linked Actions. Without setting this property to “True”, everytime you add or remove an icon in the collection, you have to check and change the ImageIndex of all the Actions.</p>
+<h2 id="demos-uses-material-design-icon-fonts">Demos uses Material Design Icon Fonts</h2>
+<p>All demos included in this repo uses the Material Design Font available <a href="https://github.com/Templarian/MaterialDesign-Webfont">here.</a> (the file “materialdesignicons-webfont.ttf” is renamed to “Material Design Icons.ttf” and included into <strong>Demo\Fonts</strong> folder)</p>
+<p><strong>Warning: “Material Font” has changed again</strong></p>
+<p>Take care of changed Font file used in the Demos starting from v3.3.2 release, as explained <a href="https://ethea.it/docs/iconfontsimagelist/Deploy-Applications">here</a>.</p>
+<p><strong>RELEASE NOTES:</strong></p>
+<p>15 Oct 2026: version 3.4.3 (VCL+FMX)</p>
+<ul>
+<li>Added support for Delphi 13.2</li>
+<li>Fixed TIconFontsImageListBase.GetNameByIndex</li>
+<li>Added demo for Delphi 13</li>
+</ul>
+<p>19 Aug 2025: version 3.4.2 (VCL+FMX)</p>
 <ul>
 <li>Updated Packaged for Delphi 13 and 64bit IDE</li>
 </ul>
@@ -100,8 +195,8 @@ td{
 <ul>
 <li>Fixed Slow loading of material design font in Windows 11</li>
 <li>Added support for Delphi 12.1</li>
-<li>Removed old font &ldquo;Material Design Icons Desktop.ttf&rdquo;</li>
-<li>Added new font &ldquo;Material Design Icons.ttf&rdquo;</li>
+<li>Removed old font “Material Design Icons Desktop.ttf”</li>
+<li>Added new font “Material Design Icons.ttf”</li>
 <li>Removed old unit form Font Name conversion: MaterialFontConvert.pas</li>
 <li>Updated list of Icons Names/CodePoint to version 7.4.47 into Source\Fonts\Icons.MaterialDesign.pas</li>
 <li>Added Search of Icons by Name in Custom CharMap</li>
@@ -138,7 +233,7 @@ td{
 <ul>
 <li>FMX version aligned to VCL</li>
 <li>Completed support for Delphi 11 Alexandria</li>
-<li>aligned demo font &ldquo;Material Design Icons Desktop&rdquo; to ver. 6.1.41</li>
+<li>aligned demo font “Material Design Icons Desktop” to ver. 6.1.41</li>
 </ul>
 <p>20 Jul 2021: version 2.6.0 (VCL) and 1.8.0 (FMX)</p>
 <ul>
@@ -181,7 +276,7 @@ td{
 <p>04 Sep 2020: version 2.2.2 (VCL) and 1.5.1 (FMX)</p>
 <ul>
 <li>Export Icons in png files into component editor</li>
-<li>Updated &ldquo;Material Design Font Desktop.ttf&rdquo; font and metadata</li>
+<li>Updated “Material Design Font Desktop.ttf” font and metadata</li>
 </ul>
 <p>27 Aug 2020: version 2.2.1 (VCL) and 1.5.0 (FMX)</p>
 <ul>
@@ -211,14 +306,14 @@ td{
 </ul>
 <p>17 May 2020: official 1.9 (VCL) and 1.4 version (FMX)</p>
 <ul>
-<li>Added component &ldquo;menu option&rdquo; to <a href="https://github.com/EtheaDev/IconFontsImageList/wiki/Convert-Material-Icons">convert &ldquo;Material&rdquo; Icons</a> from old font &ldquo;Material Design Icons&rdquo; (materialdesignicons-webfont.ttf) to new font &ldquo;Material Design Icons Desktop&rdquo; (Material Design Icons Desktop.ttf)</li>
-<li>Restored old font &ldquo;Material Design Icons&rdquo; only for use with Delphi 7 and Delphi 2010.</li>
+<li>Added component “menu option” to <a href="https://github.com/EtheaDev/IconFontsImageList/wiki/Convert-Material-Icons">convert “Material” Icons</a> from old font “Material Design Icons” (materialdesignicons-webfont.ttf) to new font “Material Design Icons Desktop” (Material Design Icons Desktop.ttf)</li>
+<li>Restored old font “Material Design Icons” only for use with Delphi 7 and Delphi 2010.</li>
 <li>Fixed FMX components and demos to compile with mobile platforms</li>
 </ul>
 <p>13 May 2020: official 1.8 (VCL) and 1.3 version (FMX)</p>
 <ul>
 <li>Changed font used in the Demos to preserve future changes of char/mapping.</li>
-<li>Added preview for new &ldquo;Material Design Icons Desktop.ttf&rdquo; in Demo/Fonts folder.</li>
+<li>Added preview for new “Material Design Icons Desktop.ttf” in Demo/Fonts folder.</li>
 </ul>
 <p>9 May 2020: official 1.2 version (FMX)</p>
 <ul>
@@ -226,7 +321,7 @@ td{
 </ul>
 <p>7 May 2020: official 1.1 version (FMX)</p>
 <ul>
-<li>Added Component Editor for FMX version: <a href="https://github.com/EtheaDev/IconFontsImageList/wiki/Component-Editor-(FMX)">look here&hellip;</a>.</li>
+<li>Added Component Editor for FMX version: <a href="https://github.com/EtheaDev/IconFontsImageList/wiki/Component-Editor-(FMX)">look here…</a>.</li>
 <li>Fixed some problems in FMX version</li>
 <li>Updated Demo for FMX version</li>
 </ul>
@@ -237,12 +332,12 @@ td{
 </ul>
 <p>12 April 2020: official 1.6 version (VCL)</p>
 <ul>
-<li>Added a custom CharMap form (VCL only) to show and collect icons more easily: <a href="https://github.com/EtheaDev/IconFontsImageList/wiki/CharMap">look here&hellip;</a>.</li>
+<li>Added a custom CharMap form (VCL only) to show and collect icons more easily: <a href="https://github.com/EtheaDev/IconFontsImageList/wiki/CharMap">look here…</a>.</li>
 </ul>
 <p>27 March 2020: official 1.5 version (VCL) and first 1.0 version (FMX)</p>
 <ul>
 <li>Added support for Icon Fonts that contains surrogate pair characters (VCL &amp; FMX)!</li>
-<li>Now you can use all the icons present in any &ldquo;font collection&rdquo; that containts those special characters: <a href="https://github.com/EtheaDev/IconFontsImageList/wiki/Icon-Fonts-with-surrogate-pair">look here&hellip;</a>.</li>
+<li>Now you can use all the icons present in any “font collection” that containts those special characters: <a href="https://github.com/EtheaDev/IconFontsImageList/wiki/Icon-Fonts-with-surrogate-pair">look here…</a>.</li>
 </ul>
 <p>24 March 2020: official 1.4 version (VCL) and first Beta version (FMX)</p>
 <ul>
@@ -280,5 +375,7 @@ td{
 <li>Very high performance for building hundreds of icons.</li>
 <li>Support from Delphi 2010 to 10.3 Rio</li>
 </ul>
-<p>Inspired by the &ldquo;Font Icon Editor&rdquo; project by Luca Minuti:
+<p>Inspired by the “Font Icon Editor” project by Luca Minuti:
 <a href="https://github.com/lminuti/FontIconEditor">https://github.com/lminuti/FontIconEditor</a></p>
+</body>
+</html>

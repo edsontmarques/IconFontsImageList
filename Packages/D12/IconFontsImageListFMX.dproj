@@ -2,7 +2,7 @@
     <PropertyGroup>
         <ProjectGuid>{452EDB1E-5B9B-4E89-9D36-A63A06F44B45}</ProjectGuid>
         <MainSource>IconFontsImageListFMX.dpk</MainSource>
-        <ProjectVersion>20.2</ProjectVersion>
+        <ProjectVersion>20.3</ProjectVersion>
         <FrameworkType>FMX</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
@@ -193,8 +193,7 @@
                 <Source>
                     <Source Name="MainSource">IconFontsImageListFMX.dpk</Source>
                 </Source>
-                <Excluded_Packages>
-                </Excluded_Packages>
+                <Excluded_Packages/>
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Android">False</Platform>

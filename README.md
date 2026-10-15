@@ -1,8 +1,12 @@
-﻿## IconFontsImageList [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+﻿## IconFontsImageList
+
+<!-- badges -->
+[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/EtheaDev/IconFontsImageList?label=release&color=blue)](https://github.com/EtheaDev/IconFontsImageList/releases)
+[![Delphi 7+](https://img.shields.io/badge/Delphi-7%2B-e62329.svg)](https://www.embarcadero.com/products/delphi)
+[![Platform: VCL and FMX](https://img.shields.io/badge/Platform-VCL%20%7C%20FMX-8a2be2.svg)](https://docwiki.embarcadero.com/RADStudio/en/Main_Page)
 
 ## Four advanced components to simplify use of Icon Fonts as images and ImageList (for VCL and FMX). Full support for High-DPI apps. Rendering optimized with GDI+
-
-### Actual official version 3.4.2 (VCL+FMX)
 
 | Component | Description |
 | - | - |
@@ -13,7 +17,7 @@
 
 ## New Setup for automatic installation of components
 
-From 3.4.0 version a new "Installer" read-to-use is located in the Release area: [Download the Installer](https://github.com/EtheaDev/IconFontsImageList/releases/latest/download/IconFontsImageList_Setup.exe).
+An "Installer" read-to-use is located in the Release area: [Download the Installer](https://github.com/EtheaDev/IconFontsImageList/releases/latest/download/IconFontsImageList_Setup.exe).
 
 The Installer automatically detect your Delphi versions, install sources, build and install packages and add source paths.
 
@@ -31,13 +35,11 @@ Notice: the Installer is not able to automatic compile and install for Delphi 7:
 
 Related links: https://www.embarcadero.com/ - https://learndelphi.org/
 
-Sample image of VCL version
+**Sample image of VCL version**
 ![Sample.jpg](./Demo/Images/Sample.jpg)
 
-Sample image of FMX version
+**Sample image of FMX version**
 ![SampleFMX.jpg](./Demo/Images/SampleFMX.jpg)
-
-Follow the [guide in Wiki section](https://github.com/EtheaDev/IconFontsImageList/wiki) to known how to use those components to modernize your Delphi VCL or FMX applications scalable, colored and beautiful with few lines of code.
 
 ## Very important notice:
 
@@ -51,9 +53,15 @@ All demos included in this repo uses the Material Design Font available [here.](
 
 **Warning: "Material Font" has changed again**
 
-Take care of changed Font file used in the Demos starting from v3.3.2 release, as explained [here](https://github.com/EtheaDev/IconFontsImageList/wiki/Deploy-Applications).
+Take care of changed Font file used in the Demos starting from v3.3.2 release, as explained [here](https://ethea.it/docs/iconfontsimagelist/Deploy-Applications).
 
 **RELEASE NOTES:**
+
+15 Oct 2026: version 3.4.3 (VCL+FMX)
+- Added support for Delphi 13.2
+- Fixed TIconFontsImageListBase.GetNameByIndex
+- Added demo for Delphi 13
+
 19 Aug 2025: version 3.4.2 (VCL+FMX)
 - Updated Packaged for Delphi 13 and 64bit IDE
 

@@ -3,7 +3,7 @@
 {       Icon Fonts ImageList: An extended ImageList for Delphi/VCL             }
 {       to simplify use of Icons (resize, colors and more...)                  }
 {                                                                              }
-{       Copyright (c) 2019-2025 (Ethea S.r.l.)                                 }
+{       Copyright (c) 2019-2026 (Ethea S.r.l.)                                 }
 {       Author: Carlo Barazzetta                                               }
 {       Contributors:                                                          }
 {         Nicola Tambascia                                                     }
@@ -58,7 +58,7 @@ resourcestring
   ERR_COLLECTION_NOT_ASSIGNED = 'Error: image collection of "%s" not assigned!';
 
 const
-  IconFontsImageListVersion = '3.4.2';
+  IconFontsImageListVersion = '3.4.3';
   DEFAULT_SIZE = 16;
 
 type
@@ -682,7 +682,7 @@ end;
 
 function TIconFontsImageListBase.GetNameByIndex(AIndex: TImageIndex): TImageName;
 begin
-  if CheckCollection then
+  if CheckCollection and (AIndex <= IconFontItems.Count-1) and (AIndex > 0) then
     Result := IconFontItems.Items[AIndex].IconName
   else
     Result := '';

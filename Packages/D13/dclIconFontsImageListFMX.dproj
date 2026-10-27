@@ -1,8 +1,8 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <ProjectGuid>{61E87847-C63A-494D-BFF7-1BAC0FEB00F9}</ProjectGuid>
         <MainSource>dclIconFontsImageListFMX.dpk</MainSource>
-        <ProjectVersion>20.3</ProjectVersion>
+        <ProjectVersion>20.5</ProjectVersion>
         <FrameworkType>FMX</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
@@ -90,7 +90,7 @@
         <SanitizedProjectName>dclIconFontsImageListFMX</SanitizedProjectName>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <DllSuffix>$(Auto)</DllSuffix>
-        <DCC_Description>Ethea IconFontsImageList  FMX components</DCC_Description>
+        <DCC_Description>Ethea IconFontsImageList FMX components</DCC_Description>
         <DesignOnlyPackage>true</DesignOnlyPackage>
         <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
@@ -207,8 +207,7 @@
                 <Source>
                     <Source Name="MainSource">dclIconFontsImageListFMX.dpk</Source>
                 </Source>
-                <Excluded_Packages>
-                </Excluded_Packages>
+                <Excluded_Packages/>
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Android">False</Platform>
